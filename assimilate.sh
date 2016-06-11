@@ -29,7 +29,7 @@ mkdir -p $T
 exec </dev/null >$T/boot.log 2>&1
 set -x
 
-for x in /opt/hodor/[a-z]*/[a-z]*.boot.sh
+for x in /opt/hodor/[A-Za-z]*/[A-Za-z]*.boot.sh
 do
   B=$(basename "$x")
   D=$(basename $(dirname "$x"))
