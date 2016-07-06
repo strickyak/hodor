@@ -38,6 +38,8 @@ do
 done
 ~~~
 
+ssh -n root@$TARGET 'chmod 755 /etc/rc.local'
+
 # Install a crontab to update and upgrade hourly,
 # and to reboot on Sunday mornings.
 R=$(python -c 'import random; print int(random.random()*40+15)')
